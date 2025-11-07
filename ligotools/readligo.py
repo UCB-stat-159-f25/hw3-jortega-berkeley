@@ -238,8 +238,7 @@ def loaddata(filename, ifo=None, tvec=True, readstrain=True, strain_chan=None, d
         return strain, time, channel_dict
     else:
         return strain, meta, channel_dict
-
-
+    
 def dq2segs(channel, gps_start):
     """
     This function takes a DQ CHANNEL (as returned by loaddata or getstrain) and 
