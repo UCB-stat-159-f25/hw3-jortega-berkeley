@@ -1,0 +1,19 @@
+ENV_NAME = stat159
+MYST_BUILD = myst build --html
+
+# Create or update the environment
+env:
+	@echo "Creating or updating conda environment: $(ENV_NAME)"
+	conda env update -f environment.yml --prune || conda env create -f environment.yml
+
+# Build local HTML version of the site
+html:
+	@echo "Building MyST site..."
+	$(MYST_BUILD)
+
+# Remove generated outputs
+clean:
+	@echo "Cleaning generated files..."
+	rm -rf figures/ audio/ _build/
+
+.PHONY: env html clean
