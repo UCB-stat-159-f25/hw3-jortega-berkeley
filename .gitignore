@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# MyST build output
+_build/
+.myst/
+
+# Pytest cache
+.pytest_cache/
+
+# Environments
+.venv/
+.env/
+
+# Outputs (reproducible files)
+figures/*
+audio/*
+
+# OS junk
+.DS_Store
