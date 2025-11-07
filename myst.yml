@@ -1,6 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
-project:
+projet:
+  title: "STAT 159 HW3"
   id: 6b7899f8-004f-4ee6-8f30-b06109707a12
   github: https://github.com/UCB-stat-159-f25/hw3-jortega-berkeley
   toc:
@@ -12,6 +13,7 @@ site:
   template: book-theme
   options:
     baseUrl: "/hw3-jortega-berkeley/"
+    cleanUrls: false
   actions:
     - title: Launch Binder
       url: "https://mybinder.org/v2/gh/UCB-stat-159-f25/hw3-jortega-berkeley/HEAD?labpath=LOSC_Event_tutorial.ipynb"
