@@ -1,3 +1,5 @@
 Used ChatGPT 5 to fix an issue with ligotools/test/test_readligo.py file. It kept erroring when trying to run the tests. Used the prompts of the error to figure out the issue.
 
 Used ChatGPT 5 to fix an issue with pages.yml. Github was failing to launch myst and binder setups. Used prompts to fix.
+
+Used ChatGPT 5 to fix deployed website with correct CSS assets.
