@@ -1,8 +1,7 @@
-# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
-projet:
-  title: "STAT 159 HW3"
+project:
   id: 6b7899f8-004f-4ee6-8f30-b06109707a12
+  title: "STAT 159/259 HW3 - LIGO Tutorial"
   github: https://github.com/UCB-stat-159-f25/hw3-jortega-berkeley
   toc:
     - file: index.md
@@ -10,14 +9,10 @@ projet:
       title: Notebook
 
 site:
+  # you may keep or remove template; it isn't required
   template: book-theme
-  options:
-    baseUrl: "/hw3-jortega-berkeley/"
-    cleanUrls: false
   actions:
     - title: Launch Binder
       url: "https://mybinder.org/v2/gh/UCB-stat-159-f25/hw3-jortega-berkeley/HEAD?labpath=LOSC_Event_tutorial.ipynb"
-
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+    cleanUrls: false   # make links end with .html (avoids 404s on Pages)

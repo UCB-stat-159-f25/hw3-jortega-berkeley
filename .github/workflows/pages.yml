@@ -27,15 +27,11 @@ jobs:
           python-version: "3.11"
 
       - name: Install mystmd (Python CLI)
-        run: python -m pip install --upgrade pip mystmd
+        run: python -m pip install --upgrade pip mystmd==1.6.4
 
-      - name: Debug myst
-        run: |
-          python -V
-          myst --version || true
-          ls -la
-
-      - name: Build MyST site
+      - name: Build MyST site (with BASE_URL)
+        env:
+          BASE_URL: "/hw3-jortega-berkeley"
         run: myst build --html
 
       - name: Disable Jekyll on Pages
