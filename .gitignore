@@ -20,7 +20,7 @@ _build/
 .venv/
 .env/
 
-# Outputs (reproducible files)
+# Outputs
 figures/*
 audio/*
 
